@@ -1,6 +1,13 @@
 {
-  "name": "Progressive Web App",
-  "short_name": "PWA",
+ "name": "CornwallApp",
+    "short_name": "Cornwall Tourist App",
+    "description": "A Cornwall Tourist App that gives people places to eat, drink etc in a particular area in Cornwall",
+  "start_url": "./index.html?utm=homescreen",
+  "display": "standalone",
+  "orientation": "portrait",
+    "background_color":"#000000",
+    "theme_color":"#ffffff",
+ "icons": [
     "icons": [{
       "src": "images/app-icon-32.png",
       "type": "image/png",
