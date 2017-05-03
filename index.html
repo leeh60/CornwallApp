@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+
+  <title>Progressive Web App</title>
+
+  <link rel="shortcut icon" sizes="32x32" href="images/app-icon-32.png">
+
+  <meta name="theme-color" content="#ff0000"> 
+  <link rel="manifest" href="manifest.json">
+
+<style>
+
+    /* Styling for render while resources are loading. For browsers don't support native Web Components. */
+    progressive-app[unresolved] {
+      display: block;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #ff0000;
+      color: #fff;
+      font-size: 20px;
+      line-height: 50px;
+      padding: 0 0 0 88px;
+	  width: 100%;
+	  top: 0;
+	  height: 60px;
+	  position: absolute;
+	  left:0;
+    }
+
+  </style>
+
+  <link href="spinner.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall Tourist App </span>
+</header>
+<div class="mdl-layout__header-row">
+
+
+          <span class="mdl-layout-title">Test Page - Progressive Web Apps</span>
+          <div class="mdl-layout-spacer"></div>
+         </div>
+<span class="Header">Cornwall Tourist App</span>
+    <div class="Main">
+      <div class="Spinner">
+        <div class="Spinner-layer">
+          <div class="Spinner-circleClipper Spinner-circleClipper--right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Spinner-circleClipper Spinner-circleClipper--left"></div>
+  </progressive-app>
+</body>
+</html>
