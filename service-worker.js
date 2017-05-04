@@ -1,5 +1,5 @@
 var BASE_PATH = '/CornwallApp/';
-
+var CACHE_NAME = 'bgPWA-v15';
 var CACHED_URLS = [
 
     // Our HTML
