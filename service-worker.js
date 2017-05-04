@@ -1,3 +1,8 @@
 self.addEventListener('fetch', function(event) {
-  console.log('Fetch request for:', event.request.url);
+  if (event.request.url.indexOf('styles.css') !== -1) {
+    event.respondWith(
+      new Response('body { background: green; }',
+      { headers: { 'Content-Type': 'text/css' } }
+    ));
+  }
 });
