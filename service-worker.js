@@ -1,9 +1,9 @@
 var BASE_PATH = '/CornwallApp/';
 var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
-  'offline.html',
-  'styles.css',
-  'padstow.jpg'
+    BASE_PATH + 'offline.html',
+    BASE_PATH + 'padstow.jpg',
+    BASE_PATH + 'styles.css',
 ];
 
 self.addEventListener('install', function(event) {
