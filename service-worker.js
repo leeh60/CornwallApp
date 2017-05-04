@@ -1,6 +1,6 @@
 var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
-  'offline.html',
+  'index.html',
   'styles.css',
   'padstow.jpg',
 ];
@@ -16,7 +16,7 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     fetch(event.request).catch(function() {
-      return caches.match('offline.html');
+      return caches.match('index.html');
     })
   );
 });
