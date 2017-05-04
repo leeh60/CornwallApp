@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
 
     console.log('Service worker registered successfully');
   }).catch(function(err) {
@@ -7,9 +7,9 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const Form = document.getElementById("CornwallForm");
-if(Form){
-    const CornwallFormSubmit = e => {
+const askJack = document.getElementById("askJackForm");
+if(askJack){
+    const askJackFormSubmit = e => {
         e.preventDefault();
         const contact = {
             "name": e.target.name.value,
@@ -17,7 +17,7 @@ if(Form){
             "question": e.target.question.value,
         };
 
-        fetch("https://leeh60.github.io/CornwallApp/index.html", {mode: "no-cors", method: "POST", body: contact})
+        fetch(“YOURURL", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
                 console.log('hello response!', response);
             }).catch(() => {
@@ -32,5 +32,7 @@ if(Form){
                 localStorage.setItem('contact', JSON.stringify(allContacts));
             });
     };
-    Form.addEventListener('submit', CornwallFormSubmit, false);
+    askJack.addEventListener('submit', askJackFormSubmit, false);
 }
+
+
