@@ -7,9 +7,9 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const askJack = document.getElementById("askJackForm");
-if(askJack){
-    const askJackFormSubmit = e => {
+const Form = document.getElementById("CornwallForm");
+if(Form){
+    const CornwallFormSubmit = e => {
         e.preventDefault();
         const contact = {
             "name": e.target.name.value,
@@ -17,7 +17,7 @@ if(askJack){
             "question": e.target.question.value,
         };
 
-        fetch("http://jackcat.co.uk/", {mode: "no-cors", method: "POST", body: contact})
+        fetch("https://www.habbo.com/", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
                 console.log('hello response!', response);
             }).catch(() => {
@@ -32,5 +32,5 @@ if(askJack){
                 localStorage.setItem('contact', JSON.stringify(allContacts));
             });
     };
-    askJack.addEventListener('submit', askJackFormSubmit, false);
+    Form.addEventListener('submit', CornwallFormSubmit, false);
 }
