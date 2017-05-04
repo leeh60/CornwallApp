@@ -1,3 +1,4 @@
+var BASE_PATH = '/CornwallApp/';
 var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
   'offline.html',
