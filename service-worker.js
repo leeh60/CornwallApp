@@ -1,8 +1,7 @@
 self.addEventListener('fetch', function(event) {
-  if (event.request.url.indexOf('styles.css') !== -1) {
+  if (event.request.url.indexOf('padstow.jpg') !== -1) {
     event.respondWith(
-      new Response('body { background: green; }',
-      { headers: { 'Content-Type': 'text/css' } }
-    ));
+      fetch('padstow.jpg')
+    );
   }
-});
+})
