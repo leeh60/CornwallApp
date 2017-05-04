@@ -1,6 +1,4 @@
-var BASE_PATH = 'CornwallApp';
-
-var CACHE_NAME = 'gih-cache-v6';
+var BASE_PATH = '/CornwallApp/';
 
 var CACHED_URLS = [
 
