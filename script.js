@@ -17,7 +17,7 @@ if(Form){
             "question": e.target.question.value,
         };
 
-        fetch("http://jackcat.co.uk/", {mode: "no-cors", method: "POST", body: contact})
+        fetch("https://leeh60.github.io/CornwallApp/offline.html", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
                 console.log('hello response!', response);
             }).catch(() => {
