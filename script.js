@@ -17,7 +17,7 @@ if(Form){
             "question": e.target.question.value,
         };
 
-        fetch("https://www.habbo.com/", {mode: "no-cors", method: "POST", body: contact})
+        fetch("https://jackcat.co.uk/", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
                 console.log('hello response!', response);
             }).catch(() => {
